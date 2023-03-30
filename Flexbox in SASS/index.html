@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Flexbox in SASS/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Flexbox project</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <img class="logo__image" src="../Flexbox in SASS/assets/logo.png" alt="logo">
+        </div>
+        <form action="/" class="search">
+            <input type="text" class="search__input" placeholder="Search ...">
+            <button class="search__button">Search</button>
+        </form>
+        <div class="settings">
+            <a class="settings__icon-link" href=""><i class="fa-solid fa-screwdriver-wrench"></i></a>
+            <a class="settings__icon-link" href=""><i class="fa-solid fa-gear"></i></a>
+            <a class="settings__icon-link" href=""><i class="fa-solid fa-list-check"></i></a>
+        </div>
+        <nav class="menu">
+            <ul class="menu__items">
+                <li class="menu__item"><a href="" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Products</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="main-articles">
+            <h2 class="main-articles__header">Featured</h2>
+            <div class="main-articles__wrapper">
+                <article class="article">
+                    <img class="article__image" src="../Flexbox in SASS/assets/logo.png" alt="">
+                    <h2 class="article__title">Article 1</h2>
+                    <p class="article__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam aperiam et dicta rem, iure sequi, vitae officia nihil corporis placeat aspernatur soluta ipsum nulla tempore voluptas similique. Quam, saepe aperiam!</p>
+                    <button class="article__button">Read more...</button>
+                </article>
+            <article class="article">
+                <img class="article__image" src="../Flexbox in SASS/assets/logo.png" alt="">
+                <h2 class="article__title">Article 2</h2>
+                <p class="article__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam aperiam et dicta rem, iure sequi, vitae officia nihil corporis placeat aspernatur soluta ipsum nulla tempore voluptas similique. Quam, saepe aperiam!</p>
+                <button class="article__button">Read more...</button>
+            </article>
+            <article class="article">
+                <img class="article__image" src="../Flexbox in SASS/assets/logo.png" alt="">
+                <h2 class="article__title">Article 3</h2>
+                <p class="article__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam aperiam et dicta rem, iure sequi, vitae officia nihil corporis placeat aspernatur soluta ipsum nulla tempore voluptas similique. Quam, saepe aperiam!</p>
+                <button class="article__button">Read more...</button>
+            </article>
+        </section>
+    </div>
+        <section class="article-list">
+            <h2 class="article-list__header">News</h2>
+            <div class="article-list__wraper">
+                <article class="article article--small">
+                    <img class="article__image article__image--small" src="https://picsum.photos/id/238/200" alt="people">
+                    <h2 class="article__title">Small article 1</h2>
+                </article>
+                <article class="article article--small">
+                    <img class="article__image article__image--small" src="https://picsum.photos/id/239/200" alt="people">
+                    <h2 class="article__title">Small article 2</h2>
+                </article>
+                <article class="article article--small">
+                    <img class="article__image article__image--small" src="https://picsum.photos/id/233/200" alt="people">
+                    <h2 class="article__title">Small article 3</h2>
+                </article>
+                <article class="article article--small">
+                    <img class="article__image article__image--small" src="https://picsum.photos/id/231/200" alt="people">
+                    <h2 class="article__title">Small article 4</h2>
+                </article>
+                <article class="article article--small">
+                    <img class="article__image article__image--small" src="https://picsum.photos/id/242/200" alt="people">
+                    <h2 class="article__title">Small article 5</h2>
+                </article>
+                <article class="article article--small">
+                    <img class="article__image article__image--small" src="https://picsum.photos/id/243/200" alt="people">
+                    <h2 class="article__title">Small article 6</h2>
+                </article>
+                <article class="article article--small">
+                    <img class="article__image article__image--small" src="https://picsum.photos/id/244/200" alt="people">
+                    <h2 class="article__title">Small article 7</h2>
+                </article>
+                <article class="article article--small">
+                    <img class="article__image article__image--small" src="https://picsum.photos/id/230/200" alt="people">
+                    <h2 class="article__title">Small article 8</h2>
+                </article>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__divider"></div>
+            <div class="footer__wraper">
+                <div class="footer__info">
+                    <h4 class="footer__info-title">Informations</h4>
+                    <ul class="footer__info-items">
+                        <li class="footer__info-item"><a class="footer__info-item-link" href="#">News</a></li>
+                        <li class="footer__info-item"><a class="footer__info-item-link" href="#">Featured</a></li>
+                        <li class="footer__info-item"><a class="footer__info-item-link" href="#">RODO</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <h4 class="footer__info-title">Links</h4>
+                    <ul class="footer__info-items">
+                        <li class="footer__info-item"><a class="footer__info-item-link" href="#">About</a></li>
+                        <li class="footer__info-item"><a class="footer__info-item-link" href="#">Products</a></li>
+                        <li class="footer__info-item"><a class="footer__info-item-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">© 2023 - Dawid Femin - All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>

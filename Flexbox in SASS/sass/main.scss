@@ -1,0 +1,279 @@
+//Import fonts
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$main-color: greenyellow;
+$default-font: 'Roboto', sans-serif;
+$special-font: 'PT Sans', sans-serif;
+$default-gradient: linear-gradient(168deg, #FF2CDF 0%, #0014FF 100%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: $default-font;
+    background-image: url('../assets/background_flex.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+/*HEADER COMPONENT*/
+.logo {
+    display: flex;
+    flex-basis: 200px;
+    padding: 5px;
+    justify-content: center;
+    background-color: #fff;
+    &__image {
+        width: 70px;
+    }
+    @media (max-width: 799px) {
+        flex-basis: 100%;
+    }
+}
+
+/*SEARCH ELEMENT*/
+.search {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    &__input {
+        flex-basis: 60%;
+        height: 40%;
+        margin-right: 20px;
+        padding: 0 10px;
+        font-size: 1.6rem;
+        border: 1px solid #000;
+        border-radius: 10px;
+        outline: none;
+        &:focus {
+            box-shadow: 0px 2px 10px 0px rgb(90, 90, 90);
+        }
+        @media (max-width: 799px) {
+            height: 30px;
+            margin: 20px 10px 20px 0;
+        }
+    }
+    &__button {
+        height: 40%;
+        font-size: 1.6rem;
+        padding: 0 10px;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .2s;
+        &:hover {
+            background-color: $main-color;
+            border: none;
+            box-shadow: 0 0 10px 0 #888;
+        }
+        @media (max-width: 799px) {
+            height: 30px;
+        }
+    }
+}
+
+/*SETTINGS ELEMENT*/
+.settings {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    background-color: #fff;
+    &__icon-link {
+        margin: 0 5px;
+        color: #000;
+        transition: .2s;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    @media (max-width: 799px) {
+        flex-basis: 100%;
+        justify-content: center;
+        padding: 10px 0;
+    }
+}
+
+/*MENU COMPONENT*/
+.menu {
+    flex-basis: 100%;
+    background: $default-gradient;
+    &__items {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    &__item {
+        padding: 10px 20px;
+    }
+    @media (max-width: 799px) {
+        padding: 10px 0;
+        font-size: 1.5rem;
+    }
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        transition: .2s;
+        &:hover {
+            color: $main-color;
+            border-bottom: 1px solid $main-color;
+        }
+    }
+}
+
+/*ARTICLES COMPONENT*/
+.main-articles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    &__header {
+        flex-basis: 100%;
+        margin: 50px 0 20px 0;
+        font-size: 3.5rem;
+        font-family: $special-font;
+        text-align: center;
+        color: #fff;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/*SINGLE ARTICLE*/
+.article {
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 10px;
+     background-color: #ffffffce;
+     border-radius: 10px;
+      box-shadow: 0px 2px 20px 5px rgb(40, 40, 40);
+      &__image {
+          display: block;
+          max-width: 140px;
+          margin: 0 auto;
+          border-radius: 5px;
+          &--small {
+            margin: 20px auto 0 auto;
+          }
+       }
+      &__title {
+          padding: 20px 0;
+          font-family: $special-font;
+          text-align: center;
+      }
+       &__description {
+           font-size: 1.4rem;
+           padding-bottom: 20px;
+          text-align: center;
+      }
+      &__button {
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: .2s;
+          &:hover {
+               background-color: $main-color;
+              border: none;
+              box-shadow: 0 0 10px 0 #888;
+          }
+      }
+      &--small {
+            width: 200px;
+            margin: 50px;
+      }
+ }
+
+/*SMALL SINGLE ARTICLE*/
+.article-list {
+    display: flex;
+     flex-basis: 100%;
+     flex-wrap: wrap;
+     justify-content: center;
+     &__wraper {
+        display: flex;
+        flex-basis: 1200px;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+     &__header {
+         flex-basis: 100%;
+         font-size: 3rem;
+         font-family: $special-font;
+         text-align: center;
+         color: #fff;
+     }
+ }
+
+/*FOOTER COMPONENT*/
+ .footer {
+     flex-basis: 100%;
+    //  background-color: #Fff;
+     &__divider {
+        height: 20px;
+        width: 100%;
+        background: $default-gradient;
+     }
+     &__wraper {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 800px;
+        margin: 0 auto;
+     }
+     &__info {
+        margin: 30px 0;
+     }
+     &__info-title {
+        font-family: $special-font;
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+     }
+     &__info-items {
+        list-style: none;
+     }
+     &__info-item {
+         padding: 10px 0;
+        text-align: center;
+     }
+     &__info-item-link {
+         font-size: 1.5rem;
+        text-decoration: none;
+        color: #fff;
+        transition: .2s;
+        &:hover {
+            color: $main-color;
+        }
+     }
+     &__copyright {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        font-family: $special-font;
+        font-size: 1.5rem;
+        background: $default-gradient;
+        color: #fff;
+    }
+ }
